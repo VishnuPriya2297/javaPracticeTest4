@@ -34,5 +34,13 @@ public class MultipleOccurancesTest {
         String actual = object.matching("She sells seashells by the seashore", "se");
         assertNotNull(actual);
     }
+    @Test
+    public void testForGivenStringReturnIndexes() {
+        String actual = object.matching("She sell22s seashells b22y the seash22ore", "22");
+        assertEquals("Found at: 8 - 10\n" +
+                "Found at: 23 - 25\n" +
+                "Found at: 36 - 38", actual);
+    }
+
 
 }

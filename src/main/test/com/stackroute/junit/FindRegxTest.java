@@ -31,6 +31,19 @@ public class FindRegxTest {
         boolean t=object.PatternMatching("hello there you","hi");
         assertEquals(false,t);
     }
+    @Test
+    public void TestForGivenEmptyStringToFindReturnTrue()
+    {
+        boolean t=object.PatternMatching("hello there you","");
+        assertEquals(true,t);
+    }
+    @Test
+    public void TestForGivenEmptyStringReturnFalse()
+    {
+        boolean t=object.PatternMatching("","hey");
+        assertEquals(false,t);
+    }
+
 
 
 }

@@ -8,6 +8,7 @@ public class ReplaceCharecters {
     //method that returns the modified string
 public String ReplacingCharecters(String inputString)
 {
+
     String replacedString=inputString.replace("d","f");
     String finalReplacement=replacedString.replace("l","t");//using the replace method.
     return finalReplacement;

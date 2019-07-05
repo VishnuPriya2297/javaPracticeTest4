@@ -37,4 +37,10 @@ public class ReplaceCharectersTest {
         String s=object.ReplacingCharecters("fry");
         assertEquals("fry",s);
     }
+    @Test
+    public void testForGivenEmptyStringReturnOriginalString()
+    {
+        String s=object.ReplacingCharecters("");
+        assertEquals("",s);
+    }
 }

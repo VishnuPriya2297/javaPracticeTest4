@@ -19,14 +19,14 @@ CharecterOccurance object;
     @Test
     public void testForGivenStringReturnNumberOfOccurances()
     {
-        int n=object.charectercount("I am a very big String, do you have anything to find within me","a");
+        int n=object.charectercount("I am a very big String, do you have anything to find within me","5th");
        assertEquals(4,n);
 
     }
     @Test
     public void testForGivenNoOccuringCharecterReturnNull()
     {
-        int n=object.charectercount("I am a very big String, do you have anything to find within me","z");
+        int n=object.charectercount("I am a very big String, do you have anything to find within me"," z ");
         assertEquals(0,n);
 
     }

@@ -33,4 +33,11 @@ public class TransposeStringTest {
         String str=object.reverseWords("24");
         assertEquals("42 ",str);
     }
+    @Test
+    public void testForGivenSpecialCharectersReturnReverse()
+    {
+
+        String str=object.reverseWords("&*%)!");
+        assertEquals("!)%*& ",str);
+    }
 }

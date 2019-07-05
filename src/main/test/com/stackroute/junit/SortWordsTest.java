@@ -43,4 +43,18 @@ public class SortWordsTest {
         List<String> Expected= Arrays.asList("");
         assertEquals(Expected,S);
     }
+    @Test
+    public void TestForGivenANegativeNumericListReturnSortedString()
+    {
+        List<String> S=object.SortingCharecters("23 0 69 -49 1 -7");
+        List<String> Expected= Arrays.asList("-49", "-7", "0", "1","23","69");
+        assertEquals(Expected,S);
+    }
+    @Test
+    public void TestForGivenASpecialChharectersListReturnSortedString()
+    {
+        List<String> S=object.SortingCharecters("# + = - *");
+        List<String> Expected= Arrays.asList("#", "*", "+", "-","=");
+        assertEquals(Expected,S);
+    }
 }
